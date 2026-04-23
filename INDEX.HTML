@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Nuevo Mundo | Catálogo Gourmet</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#005bab", 
+                        "secondary": "#f39200", 
+                        "background": "#0d141d",
+                        "surface": "#19202a"
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-panel { backdrop-filter: blur(20px); background: rgba(25, 32, 42, 0.8); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .whatsapp-btn { background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-background text-slate-200 font-sans pb-32">
+
+    <header class="fixed top-0 w-full z-50 bg-slate-900/90 backdrop-blur-xl border-b border-white/10">
+        <div class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
+            <span class="material-symbols-outlined text-secondary cursor-pointer">menu</span>
+            <div class="flex flex-col items-center">
+                <span class="text-white font-extrabold tracking-tighter text-xl italic">NUEVO MUNDO</span>
+                <span class="text-[8px] text-secondary tracking-[0.2em] uppercase font-bold">Bodegón & Delicateses</span>
+            </div>
+            <div class="relative">
+                <span class="material-symbols-outlined text-secondary cursor-pointer">shopping_cart</span>
+                <span class="absolute -top-2 -right-2 bg-secondary text-white text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center border border-background">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-24 px-6 max-w-5xl mx-auto space-y-8">
+        
+        <section>
+            <div class="relative group">
+                <span class="absolute inset-y-0 left-4 flex items-center text-slate-500 group-focus-within:text-secondary transition-colors">
+                    <span class="material-symbols-outlined">search</span>
+                </span>
+                <input class="w-full bg-surface border border-white/10 rounded-2xl py-4 pl-12 pr-4 focus:ring-2 focus:ring-primary outline-none transition-all" placeholder="Buscar whisky, quesos o víveres..."/>
+            </div>
+        </section>
+
+        <section class="relative h-64 rounded-3xl overflow-hidden shadow-2xl border border-white/5">
+            <img src="banner-especial.jpg" alt="Promoción" class="w-full h-full object-cover opacity-60"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
+            <div class="absolute bottom-6 left-6">
+                <span class="bg-secondary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase mb-2 block w-max tracking-wider">Edición Especial</span>
+                <h2 class="text-3xl font-extrabold text-white">Maltas de Reserva</h2>
+                <p class="text-slate-300 text-sm">Colección exclusiva disponible en Margarita.</p>
+            </div>
+        </section>
+
+        <div class="flex gap-3 overflow-x-auto pb-2 no-scrollbar">
+            <button class="bg-primary text-white px-6 py-2 rounded-full font-bold shadow-lg shadow-primary/20 whitespace-nowrap">Todo</button>
+            <button class="bg-surface border border-white/5 px-6 py-2 rounded-full whitespace-nowrap hover:bg-slate-800 transition-colors">Licores</button>
+            <button class="bg-surface border border-white/5 px-6 py-2 rounded-full whitespace-nowrap hover:bg-slate-800 transition-colors">Delicateses</button>
+            <button class="bg-surface border border-white/5 px-6 py-2 rounded-full whitespace-nowrap hover:bg-slate-800 transition-colors">Víveres</button>
+        </div>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <div class="glass-panel rounded-3xl p-4 group hover:border-secondary/30 transition-all">
+                <div class="h-56 rounded-2xl overflow-hidden mb-4 bg-slate-800/50 flex items-center justify-center">
+                    <img src="macallan-12.png" alt="Macallan" class="h-48 object-contain group-hover:scale-110 transition-transform duration-500"/>
+                </div>
+                <div class="flex justify-between items-end px-2">
+                    <div>
+                        <p class="text-slate-500 text-xs uppercase font-bold mb-1">Whisky Single Malt</p>
+                        <h3 class="text-lg font-bold text-white">The Macallan 12 Years</h3>
+                        <p class="text-secondary font-black text-2xl mt-1">$125.00</p>
+                    </div>
+                    <a href="https://wa.me/584147934799?text=Hola%20Nuevo%20Mundo%2C%20quisiera%20ordenar%20The%20Macallan%2012%20Years.%20¿Me%20pueden%20dar%20el%20total%20y%20datos%20de%20pago?" class="whatsapp-btn p-3 rounded-2xl text-white shadow-lg active:scale-95 transition-transform">
+                        <span class="material-symbols-outlined">shopping_cart_checkout</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="glass-panel rounded-3xl p-4 group hover:border-secondary/30 transition-all">
+                <div class="h-56 rounded-2xl overflow-hidden mb-4 bg-slate-800/50 flex items-center justify-center">
+                    <img src="aceite-oliva.png" alt="Aceite" class="h-48 object-contain group-hover:scale-110 transition-transform duration-500"/>
+                </div>
+                <div class="flex justify-between items-end px-2">
+                    <div>
+                        <p class="text-slate-500 text-xs uppercase font-bold mb-1">Delicateses Importadas</p>
+                        <h3 class="text-lg font-bold text-white">Aceite Oliva Virgen</h3>
+                        <p class="text-secondary font-black text-2xl mt-1">$8.50</p>
+                    </div>
+                    <a href="https://wa.me/584147934799?text=Hola%20Nuevo%20Mundo%2C%20quisiera%20ordenar%20el%20Aceite%20de%20Oliva.%20¿Me%20pueden%20dar%20el%20total%20y%20datos%20de%20pago?" class="whatsapp-btn p-3 rounded-2xl text-white shadow-lg active:scale-95 transition-transform">
+                        <span class="material-symbols-outlined">shopping_cart_checkout</span>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <nav class="fixed bottom-0 left-0 w-full bg-slate-900/95 backdrop-blur-2xl border-t border-white/10 px-8 py-4 flex justify-around items-center z-50">
+        <div class="flex flex-col items-center text-secondary">
+            <span class="material-symbols-outlined">home</span>
+            <span class="text-[9px] font-bold uppercase mt-1">Inicio</span>
+        </div>
+        <div class="flex flex-col items-center text-slate-500">
+            <span class="material-symbols-outlined">liquor</span>
+            <span class="text-[9px] font-bold uppercase mt-1">Catálogo</span>
+        </div>
+        <div class="flex flex-col items-center text-slate-500">
+            <span class="material-symbols-outlined">receipt_long</span>
+            <span class="text-[9px] font-bold uppercase mt-1">Pedido</span>
+        </div>
+        <div class="flex flex-col items-center text-slate-500">
+            <span class="material-symbols-outlined">location_on</span>
+            <span class="text-[9px] font-bold uppercase mt-1">Tienda</span>
+        </div>
+    </nav>
+
+</body>
+</html>
