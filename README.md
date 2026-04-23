@@ -1,2 +1,0 @@
-# CATALOGO
-Nuevo Mundo catalogo
