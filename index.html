@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
 </head>
 <body class="bg-slate-950 font-['Plus_Jakarta_Sans'] text-slate-200 pb-24">
-    <header class="p-6 flex justify-between items-center bg-slate-900/50 backdrop-blur-md sticky top-0 z-50 border-b border-slate-800">
+    <header id="inicio" class="p-6 flex justify-between items-center bg-slate-900/50 backdrop-blur-md sticky top-0 z-50 border-b border-slate-800">
         <div class="flex flex-col">
             <span class="text-2xl font-bold tracking-tighter text-white">NUEVO MUNDO</span>
             <span class="text-[10px] tracking-[0.2em] text-orange-500 font-bold uppercase">Bodegón & Delicateses</span>
@@ -28,7 +28,7 @@
                 <p class="text-slate-400 text-sm mb-4">El sabor que prefieres al mejor precio</p>
                 <div class="flex items-center justify-between">
                     <span class="text-3xl font-bold text-orange-500 tracking-tight">$4,5</span>
-                    <button onclick="window.location.href='https://wa.me/584248834341?text=Hola! Quiero pedir la oferta de Añejo Triple AAA por $4,5'" class="bg-emerald-500 hover:bg-emerald-400 text-white p-4 rounded-2xl shadow-lg shadow-emerald-500/20 transition-all active:scale-95">
+                    <button onclick="window.location.href='https://wa.me/584147934799?text=Hola! Quiero pedir la oferta de Añejo Triple AAA por $4,5'" class="bg-emerald-500 hover:bg-emerald-400 text-white p-4 rounded-2xl shadow-lg shadow-emerald-500/20 transition-all active:scale-95">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                     </button>
                 </div>
@@ -36,7 +36,7 @@
         </div>
     </div>
 
-    <div class="px-4 pb-12">
+    <div id="combos" class="px-4 pb-12">
         <h2 class="text-sm font-bold text-slate-500 uppercase tracking-widest mb-6 ml-1 italic">Combos Playeros</h2>
         
         <div class="grid gap-6">
@@ -49,7 +49,7 @@
                     <p class="text-xs text-slate-500 mb-2">Ron Cacique + Complemento</p>
                     <div class="flex items-center justify-between">
                         <span class="text-xl font-bold text-orange-500">$6,5</span>
-                        <button onclick="window.location.href='https://wa.me/584248834341?text=Hola! Quiero el Combo Cacique por $6,5'" class="bg-emerald-500 p-2 rounded-xl">
+                        <button onclick="window.location.href='https://wa.me/584147934799?text=Hola! Quiero el Combo Cacique por $6,5'" class="bg-emerald-500 p-2 rounded-xl">
                             <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                         </button>
                     </div>
@@ -65,7 +65,7 @@
                     <p class="text-xs text-slate-500 mb-2">Ron Blanco + Chinotto</p>
                     <div class="flex items-center justify-between">
                         <span class="text-xl font-bold text-orange-500">$3,8</span>
-                        <button onclick="window.location.href='https://wa.me/584248834341?text=Hola! Quiero el Combo 5 Estrellas por $3,8'" class="bg-emerald-500 p-2 rounded-xl">
+                        <button onclick="window.location.href='https://wa.me/584147934799?text=Hola! Quiero el Combo 5 Estrellas por $3,8'" class="bg-emerald-500 p-2 rounded-xl">
                             <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                         </button>
                     </div>
@@ -75,18 +75,18 @@
     </div>
 
     <nav class="fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] bg-slate-900/80 backdrop-blur-xl border border-white/10 rounded-3xl p-4 flex justify-around items-center shadow-2xl z-50">
-        <div class="flex flex-col items-center gap-1">
+        <a href="#inicio" class="flex flex-col items-center gap-1">
             <svg class="w-6 h-6 text-orange-500" fill="currentColor" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
             <span class="text-[10px] font-bold text-orange-500 uppercase">Inicio</span>
-        </div>
-        <div class="flex flex-col items-center gap-1 opacity-40">
+        </a>
+        <a href="#combos" class="flex flex-col items-center gap-1">
             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
             <span class="text-[10px] font-bold text-white uppercase tracking-tighter">Catálogo</span>
-        </div>
-        <div class="flex flex-col items-center gap-1 opacity-40">
+        </a>
+        <a href="https://wa.me/584147934799" class="flex flex-col items-center gap-1">
             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
             <span class="text-[10px] font-bold text-white uppercase">Pedido</span>
-        </div>
+        </a>
     </nav>
 </body>
 </html>
