@@ -1,9 +1,9 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html class="dark" lang="es">
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Nuevo Mundo | Catálogo</title>
+    <title>Nuevo Mundo | Catálogo Gourmet</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
 </head>
@@ -12,11 +12,14 @@
     <header id="inicio" class="p-6 bg-slate-900/50 backdrop-blur-md sticky top-0 z-50 border-b border-slate-800">
         <div class="flex justify-between items-center">
             <div class="flex flex-col">
-                <span class="text-2xl font-bold tracking-tighter text-white uppercase">Nuevo Mundo</span>
+                <span class="text-2xl font-bold tracking-tighter text-white">NUEVO MUNDO</span>
                 <div class="flex items-center gap-2">
                     <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
                     <span class="text-[10px] text-emerald-500 font-bold uppercase tracking-wider">Abierto ahora</span>
                 </div>
+            </div>
+            <div class="bg-orange-500/10 p-2 rounded-xl border border-orange-500/20">
+                <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
             </div>
         </div>
     </header>
@@ -24,24 +27,27 @@
     <div class="p-4">
         <div class="relative rounded-3xl overflow-hidden aspect-[4/3] shadow-2xl border border-slate-800 bg-slate-900">
             <img alt="Interior de Nuevo Mundo" class="w-full h-full object-cover" src="bienvenida.jpg"/>
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
             <div class="absolute bottom-0 left-0 p-6">
                 <h1 class="text-3xl font-bold text-white mb-1">¡Bienvenidos!</h1>
-                <p class="text-slate-400 text-sm italic">Tu bodegón de confianza en la Isla.</p>
+                <p class="text-slate-400 text-sm italic">Explora lo mejor en bodegón y delicateses.</p>
             </div>
         </div>
     </div>
 
-    <div class="px-4 mb-10">
-        <h2 class="text-white font-bold mb-4 px-2 uppercase text-xs tracking-widest opacity-50">Explorar categorías</h2>
+    <div class="px-4 mb-12">
         <div class="grid grid-cols-2 gap-4">
-            <a href="#licores" class="bg-slate-900 rounded-3xl p-6 border border-slate-800 text-center flex flex-col items-center gap-2 active:scale-95 transition-all">
-                <span class="text-3xl">🥃</span>
-                <span class="text-xs font-bold text-white uppercase">Licores</span>
+            <a href="#licores" class="bg-slate-900 rounded-3xl p-6 border border-slate-800 text-center flex flex-col items-center gap-2 group">
+                <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                <span class="text-xs font-bold text-white uppercase group-hover:text-orange-500">Licores</span>
             </a>
-            <a href="#combos" class="bg-slate-900 rounded-3xl p-6 border border-slate-800 text-center flex flex-col items-center gap-2 active:scale-95 transition-all">
-                <span class="text-3xl">📦</span>
-                <span class="text-xs font-bold text-white uppercase">Combos</span>
+            <a href="#delicateses" class="bg-slate-900 rounded-3xl p-6 border border-slate-800 text-center flex flex-col items-center gap-2 group">
+                <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                <span class="text-xs font-bold text-white uppercase group-hover:text-orange-500">Delicateses</span>
+            </a>
+            <a href="#combos" class="bg-slate-900 rounded-3xl p-6 border border-slate-800 text-center flex flex-col items-center gap-2 group">
+                <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5a2 2 0 10-2 2h2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                <span class="text-xs font-bold text-white uppercase group-hover:text-orange-500">Snacks</span>
             </a>
         </div>
     </div>
@@ -50,16 +56,16 @@
         <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-xl">
             <h3 class="text-white font-bold mb-4 flex items-center gap-2 italic">Métodos de Pago</h3>
             <div class="flex flex-wrap gap-2 text-[10px] font-bold">
-                <span class="bg-slate-800 px-3 py-1.5 rounded-full border border-slate-700 text-orange-400">PAGO MÓVIL</span>
-                <span class="bg-slate-800 px-3 py-1.5 rounded-full border border-slate-700 text-orange-400">ZELLE</span>
-                <span class="bg-slate-800 px-3 py-1.5 rounded-full border border-slate-700 text-orange-400">EFECTIVO</span>
+                <span class="bg-slate-800 px-3 py-1.5 rounded-full border border-slate-700">PAGO MÓVIL</span>
+                <span class="bg-slate-800 px-3 py-1.5 rounded-full border border-slate-700">ZELLE</span>
+                <span class="bg-slate-800 px-3 py-1.5 rounded-full border border-slate-700">EFECTIVO</span>
             </div>
         </div>
 
         <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-xl text-center">
-            <h3 class="text-white font-bold mb-2">Nuestra Ubicación</h3>
+            <h3 class="text-white font-bold mb-4">Nuestra Ubicación</h3>
             <p class="text-xs text-slate-500 mb-4 italic">Calle La Marina c/c Fraternidad, Porlamar.</p>
-            <a href="https://www.google.com/maps/search/?api=1&query=Calle+La+Marina+Porlamar+Nueva+Esparta" target="_blank" class="inline-block w-full bg-orange-600 text-white py-4 rounded-2xl font-bold shadow-lg shadow-orange-900/40 active:bg-orange-700">
+            <a href="http://googleusercontent.com/maps.google.com/6" target="_blank" class="inline-block w-full bg-orange-600 text-white py-3 rounded-2xl font-bold shadow-lg shadow-orange-900/40">
                 📍 Abrir en Google Maps
             </a>
         </div>
@@ -67,18 +73,17 @@
 
     <nav class="fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] bg-slate-900/90 backdrop-blur-xl border border-white/10 rounded-3xl p-4 flex justify-around items-center shadow-2xl z-50">
         <a href="#inicio" class="flex flex-col items-center gap-1">
-            <span class="text-orange-500">🏠</span>
+            <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
             <span class="text-[9px] font-bold text-orange-500 uppercase">Inicio</span>
         </a>
         <a href="#combos" class="flex flex-col items-center gap-1 opacity-60">
-            <span class="text-white">🛍️</span>
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
             <span class="text-[9px] font-bold text-white uppercase">Combos</span>
         </a>
         <a href="#info" class="flex flex-col items-center gap-1 opacity-60">
-            <span class="text-white">📍</span>
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
             <span class="text-[9px] font-bold text-white uppercase">Info</span>
         </a>
     </nav>
 </body>
 </html>
-       
